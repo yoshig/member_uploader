@@ -1,3 +1,1 @@
-<h1>Members</h1>
-
-<%= react_component("MemberImporter", { members: @members }) %>
+<%= react_component("Members", { members: @members, csrf_token: session[:_csrf_token] }) %>
