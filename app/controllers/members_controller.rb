@@ -1,5 +1,10 @@
 class MembersController < ApplicationController
   def index
-    render json: { testing: "ok" }
+    @members = Member.all
+  end
+
+  def mass_upload
+    members = params[:members]
+    puts members
   end
 end
